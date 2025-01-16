@@ -12,30 +12,25 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+    text-align: center; /* Centraliza o conteúdo */
 }
 
 h1 {
     text-align: center;
 }
 
+/* Ajuste da largura da tabela */
 table {
-    width: 100%;
+    width: 80%; /* Define um tamanho maior, mas sem exagero */
+    max-width: 1200px; /* Define um limite máximo */
     border-collapse: collapse;
-    margin: 20px 0;
-    max-width: 1200px;
-    border-collapse: collapse;
+    margin: 20px auto; /* Centraliza a tabela */
 }
 
 th, td {
     padding: 12px;
-    text-align: left;
+    text-align: center; /* Centraliza o conteúdo dentro das células */
     border: 1px solid #ddd;
-    font-size: 16px;
 }
 
 th {
@@ -55,20 +50,24 @@ th {
     font-weight: bold;
 }
 
+/* Ajuste dos botões */
 button {
     margin: 5px;
-    padding: 10px 15px;
+    padding: 12px 15px;
     background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 200px; /* Define um tamanho fixo para evitar largura total */
+    display: inline-block; /* Mantém os botões lado a lado */
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
+/* Relatório */
 .report {
     display: none;
     margin: 20px 0;
@@ -89,63 +88,25 @@ button:hover {
     border: 1px solid #ddd;
 }
 
-.report .status-confirmed {
-    color: green;
-}
-
-.report .status-pending {
-    color: red;
-}
-/* Responsividade da tabela */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    overflow-x: auto;
-    display: block;
-}
-
-th, td {
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: left;
-    font-size: 16px;
-}
-
-/* Responsividade dos botões */
-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 100%; /* Ocupa toda a largura em telas pequenas */
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Estilização específica para mobile */
+/* Responsividade */
 @media (max-width: 768px) {
-    th, td {
-        font-size: 14px;
-        padding: 10px;
+    .container {
+        max-width: 95%;
     }
 
     table {
-        font-size: 14px;
         width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 12px;
     }
 
     button {
+        width: 100%; /* Ocupa toda a largura disponível */
         font-size: 14px;
         padding: 12px;
-    }
-    .container {
-        max-width: 100%;
-        padding: 14px;
-
     }
 }
