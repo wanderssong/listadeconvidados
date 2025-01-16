@@ -108,5 +108,5 @@ function printReport() {
 }
 
 // Adicionar convidados como exemplo
-addGuest('João Silva', 2, '11987654321', 'Confirmado');
-addGuest('Maria Oliveira', 3, '11987654322', 'Pendente');
+addGuest('Anielle Gonçalves', 3, '66 9994-3314', 'Confirmado');
+addGuest('Maria Luiza', 5, '66 9999-4733', 'Pendente');
