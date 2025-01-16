@@ -92,6 +92,8 @@ function saveReportAsPDF() {
         theme: 'striped'
     });
 
+    
+
     // Salvar PDF
     doc.save('relatorio_convidados.pdf');
 }
@@ -110,3 +112,4 @@ function printReport() {
 // Adicionar convidados como exemplo
 addGuest('Anielle Gonçalves', 3, '66 9994-3314', 'Confirmado');
 addGuest('Maria Luiza', 5, '66 9999-4733', 'Pendente');
+addGuest('Walter Kafmann', 3, '66 97256899', 'Pendente');
